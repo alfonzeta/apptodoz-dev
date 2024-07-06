@@ -1,0 +1,227 @@
+.todo {
+    position: relative;
+    border: 1px solid rgb(170, 170, 170);
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.todo-card {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    /* Ensure the overlay is above other content */
+}
+
+.own-todo {
+    border-bottom: 3px solid rgb(122, 112, 163);
+}
+
+.other-todo {
+    border-bottom: 3px solid rgb(138, 168, 130);
+}
+
+.todo-title {
+    word-wrap: break-word;
+    overflow: scroll;
+}
+
+
+.todo-title::-webkit-scrollbar {
+    display: none;
+}
+
+.todo-title-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+.more-settings {
+    z-index: 15;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    max-height: 70%;
+    transform: translate(-50%, -50%);
+    border: 1px solid saddlebrown;
+    background-color: rgb(34, 34, 34);
+    color: white;
+
+}
+
+
+
+.profile-pictures {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.contact-dropdown {
+    padding-top: 20px;
+    border: 1px solid saddlebrown;
+    z-index: 20;
+    background-color: rgb(31, 31, 31);
+    width: 120px;
+    overflow: initial;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.contact-dropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.contact-dropdown ul {
+    list-style: none;
+    padding: 0px;
+    margin: 14px;
+
+}
+
+.contact-dropdown li {
+    background-color: rgb(56, 56, 56);
+    margin-bottom: 14px;
+    cursor: pointer;
+
+}
+
+.contact-dropdown li:hover {
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 14px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.bottom-todo {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.remove-task {
+    border: 1px solid red;
+    background-color: black;
+    color: red;
+}
+
+
+.collaborators-table-container {
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    max-height: 300px;
+}
+
+
+.collaborators-table-container::-webkit-scrollbar {
+    display: none;
+
+}
+
+.collaborators-table {
+    max-height: 200px;
+    overflow: scroll;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.collaborators-table th,
+.collaborators-table td {
+    border: 1px solid #d6d6d6;
+    /* Border color */
+    padding: 18px;
+
+}
+
+.collaborators-table th {
+    background-color: #474747;
+    color: #ffffff;
+    min-width: 150px;
+}
+
+.collaborators-table tbody tr:nth-child(even) {
+    background-color: #a3a3a3;
+}
+
+.collaborators-table tbody tr:nth-child(odd) {
+    background-color: #7e7e7e;
+}
+
+.collaborators-table tbody tr:hover {
+    background-color: #76b6b6;
+}
+
+
+.more-settings-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    /* Ensure the parent has a maximum width */
+    word-wrap: break-word;
+    /* Allow long words to be broken and wrap to the next line */
+    overflow-wrap: break-word;
+    /* Similar to word-wrap, for compatibility */
+    white-space: normal;
+    /* Allow text to wrap */
+}
+
+.more-settings-title h3 {
+    max-width: 100%;
+    /* Ensure the heading doesn't exceed the parent's width */
+    word-wrap: break-word;
+    /* Allow long words to be broken and wrap to the next line */
+    overflow-wrap: break-word;
+    /* Similar to word-wrap, for compatibility */
+    white-space: normal;
+    /* Allow text to wrap */
+}
+
+.collaborators-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0px 10px 0px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .contact-dropdown {
+        width: 70%;
+    }
+
+    .collaborators-table-container {
+        justify-content: start;
+        margin-left: 30px;
+    }
+}

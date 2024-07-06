@@ -1,0 +1,65 @@
+div#root {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-width: -moz-available;
+  background-color: rgb(37, 37, 37);
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: rgb(37, 37, 37);
+  height: 100%;
+}
+
+input {
+  background-color: rgb(71, 71, 71);
+  border: 1px solid rgb(175, 175, 175);
+  color: white;
+  border-radius: 10px;
+}
+
+input:not([type="submit"]) {
+  text-indent: 4%;
+  justify-content: space-between;
+  height: 35px;
+}
+
+input:is([type="submit"]) {
+  background-color: rgb(44, 44, 44);
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid rgb(175, 175, 175);
+}
+
+
+input:focus {
+  background-color: rgb(53, 53, 53);
+  border: 1px solid rgb(207, 207, 207);
+
+}
+
+textarea:focus,
+input:focus {
+  outline: 1px solid rgb(255, 255, 255);
+}
+
+text,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+}
+
+a {
+  color: rgb(93, 209, 203);
+
+}

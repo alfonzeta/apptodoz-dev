@@ -1,0 +1,11 @@
+  .user-profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 50%;
+    font-weight: 800;
+  }

@@ -1,0 +1,141 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Add this CSS class */
+.no-scroll {
+  overflow: hidden;
+}
+
+.lists-container {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.list-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  width: 95%;
+  overflow: scroll;
+  gap: 50px;
+  padding: 15px;
+}
+
+.list-block::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-table-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.todo-table {
+  width: 100%;
+  overflow: scroll;
+  align-items: center;
+  text-align: center;
+
+}
+
+.todo-table th,
+.todo-table td {
+  border: 1px solid #d6d6d6;
+  /* Border color */
+  padding: 18px;
+
+}
+
+.todo-table th {
+  background-color: #474747;
+  color: #ffffff;
+  min-width: 150px;
+}
+
+.todo-table tbody tr:nth-child(even) {
+  background-color: #a3a3a3;
+}
+
+.todo-table tbody tr:nth-child(odd) {
+  background-color: #7e7e7e;
+}
+
+.todo-table tbody tr:hover {
+  background-color: #76b6b6;
+}
+
+.todo-table-container {
+  overflow: scroll;
+  align-items: center;
+  align-self: center;
+  width: 95%;
+  padding: 15px;
+
+}
+
+
+.todo-status {
+  background-color: red;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.in-progress-status {
+  background-color: #b37422;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.done-status {
+  background-color: #22b329;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.table-creator {
+  display: flex;
+  gap: 10px;
+}
+
+.urgent-deadline {
+  color: red;
+}
+
+.task-button {
+  width: 20%;
+  border: 1px solid wheat;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  color: white;
+}
+
+.table-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px;
+  width: 100%;
+}
+
+.table-buttons button {
+  width: 30%;
+  max-width: 180px;
+  border: 1px solid wheat;
+  background-color: rgb(65, 65, 65);
+  border-radius: 15px;
+  color: white;
+}
+
+
+.table-buttons button.active-button {
+  border: 2px solid wheat;
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+}
